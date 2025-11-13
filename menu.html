@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Menú | Veco's Food & Bar</title>
+    <link rel="stylesheet" href="../Styles/style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+
+    <!-- NAVBAR -->
+    <header class="navbar">
+        <div class="logo">
+            <a href="index.html"><img src="../Imgs/LogoVecosPg.png" alt="Veco's Logo"></a>
+        </div>
+
+        <!-- Botón hamburguesa -->
+        <input type="checkbox" id="nav-toggle" class="nav-toggle">
+        <label for="nav-toggle" class="nav-toggle-label">
+            <span></span>
+            <span></span>
+            <span></span>
+        </label>
+
+        <!-- Menú (unificado para PC y móvil) -->
+        <nav class="nav-links">
+            <a href="index.html">Inicio</a>
+            <a href="menu.html" class="active"> Menú </a>
+            <a href="#" id="btnCarrito"> 🛒Carrito </a>
+            <a href="login.html" id="login-link">Login</a>
+        </nav>
+    </header>
+
+    <!-- BANNER -->
+    <section class="banner">
+        <div class="banner-content">
+            <h1>Menú</h1>
+        </div>
+    </section>
+
+    <!-- SECCIÓN MENÚ -->
+    <section class="menu">
+        <h2>Nuestras Especialidades</h2>
+        <p style="max-width:700px;margin:0 auto 40px;">
+            En Veco’s Food & Bar contamos con comidas con sabor casero y actitud.  
+            Asados, corrientes, sancochos y vaqueritos preparados para todos los gustos.
+        </p>
+
+        <div class="menu-grid">
+            <div class="menu-item">
+                <img src="../Imgs/corrientesimg.jpg" alt="Corrientes">
+                <h3>Corrientes</h3>
+                <p>Comidas típicas con el mejor sabor casero.</p>
+                <p class="precio">$18.000</p>
+                <button class="agregar">Agregar al carrito</button>
+            </div>
+
+            <div class="menu-item">
+                <img src="../Imgs/Asadosimg.jpg" alt="Asados">
+                <h3>Asados</h3>
+                <p>Cortes jugosos, ahumados y llenos de sabor.</p>
+                <p class="precio">$25.000</p>
+                <button class="agregar">Agregar al carrito</button>
+            </div>
+
+            <div class="menu-item">
+                <img src="../Imgs/Ejecutivosimg.jpg" alt="Ejecutivos">
+                <h3>Ejecutivos</h3>
+                <p>Platos completos ideales para tus almuerzos diarios.</p>
+                <p class="precio">$20.000</p>
+                <button class="agregar">Agregar al carrito</button>
+            </div>
+
+            <div class="menu-item">
+                <img src="../Imgs/Especialesimg.jpg" alt="Especiales">
+                <h3>Especiales</h3>
+                <p>Comidas únicas para compartir y disfrutar.</p>
+                <p class="precio">$30.000</p>
+                <button class="agregar">Agregar al carrito</button>
+            </div>
+        </div>
+    </section>
+
+    <!-- POPUP DEL CARRITO -->
+    <div id="popupCarrito" class="popup">
+        <div class="popup-contenido">
+            <span class="cerrar">&times;</span>
+            <h2>Tu carrito</h2>
+            <ul id="listaCarrito"></ul>
+            <p id="total">Total: $0</p>
+            <button id="vaciarCarrito">Vaciar carrito</button>
+        </div>
+    </div>
+
+    <!-- FOOTER -->
+    <footer>
+        <p>Encuéntranos en: <strong>Calle 74 #55-34</strong></p>
+        <p>Horario de atención: <strong>7:00am a 4:00pm</strong></p>
+        <p>Contáctanos al número telefónico: <strong>#+57-323-7975311</strong></p>
+    </footer>
+
+    <!-- NOTIFICACIÓN DE PRODUCTO AGREGADO -->
+     <div id="notificacion" class="notificacion"></div>
+
+    <!-- SCRIPT -->
+     <script src="./Java/main.js"></script>
+     <script src="./Java/carrito.js"></script>
+    
+
+</body>
+</html>

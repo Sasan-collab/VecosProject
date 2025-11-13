@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ubicación | Veco's Food & Bar</title>
+    <link rel="stylesheet" href="../Styles/style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+
+   <!-- NAVBAR -->
+    <header class="navbar">
+        <div class="logo">
+            <a href="index.html"><img src="../Imgs/LogoVecosPg.png" alt="Veco's Logo"></a>
+        </div>
+
+    <!-- Botón hamburguesa -->
+    <input type="checkbox" id="nav-toggle" class="nav-toggle">
+    <label for="nav-toggle" class="nav-toggle-label">
+        <span></span>
+        <span></span>
+        <span></span>
+    </label>
+
+    <!-- Menú (unificado para PC y móvil) -->
+    <nav class="nav-links">
+        <a href="index.html" >Inicio</a>
+        <a href="ubicacion.html" class="active">Ubicación</a>
+        <a href="login.html" id="login-link">Login</a>
+    </nav>
+</header>
+
+    <!-- BANNER -->
+    <section class="banner">
+        <div class="banner-content">
+            <h1>Ubicación</h1>
+        </div>
+    </section>
+
+    <!-- SECCIÓN UBICACIÓN -->
+    <section class="ubicacion">
+        <h2>¿Dónde estamos?</h2>
+        <p>
+            Puedes encontrarnos en la <strong>Calle 74 #55-34</strong>, un lugar hecho para compartir,
+            comer delicioso y disfrutar con amigos.
+        </p>
+        <p>
+            ¡Te esperamos!
+        </p>
+
+        <div class="ubicacion-mapa">
+            <!-- Código para mostrar MAPA -->
+            <iframe 
+                src="https://www.google.com/maps?q=calle%2074%20%2355-34%20Barranquilla%20Colombia&output=embed"
+                width="100%"
+                height="400"
+                style="border:0; border-radius:15px; margin-top:30px;"
+                allowfullscreen=""
+                loading="lazy">
+            </iframe>
+        </div>
+    </section>
+
+    <!-- FOOTER -->
+    <footer>
+        <p>Encuéntranos en: <strong>Calle 74 #55-34</strong></p>
+        <p>Horario de atención: <strong>7:00am a 4:00pm</strong></p>
+        <p>Contáctanos al número telefónico: <strong>#+57-323-7975311</strong></p>
+    </footer>
+
+    <script src="./Java/main.js"></script>
+</body>
+</html>

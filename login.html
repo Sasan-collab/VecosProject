@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login | Veco's Food & Bar</title>
+    <link rel="stylesheet" href="../Styles/style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+
+    <!-- NAVBAR -->
+    <header class="navbar">
+        <div class="logo">
+            <a href="index.html"><img src="../Imgs/LogoVecosPg.png" alt="Veco's Logo"></a>
+        </div>
+
+        <!-- Botón hamburguesa -->
+        <input type="checkbox" id="nav-toggle" class="nav-toggle">
+        <label for="nav-toggle" class="nav-toggle-label">
+            <span></span>
+            <span></span>
+            <span></span>
+        </label>
+
+        <!-- Menú -->
+        <nav class="nav-links">
+            <a href="index.html">Inicio</a>
+            <a href="login.html" class="active" id="login-link">Login</a>
+        </nav>
+    </header>
+
+    <!-- SECCIÓN LOGIN -->
+    <section class="login-section">
+        <div class="login-box">
+            <h2>Iniciar Sesión</h2>
+            <form id="loginForm">
+                <input type="text" id="usuario" placeholder="Usuario" required>
+                <input type="password" id="clave" placeholder="Contraseña" required>
+                <button type="submit">Ingresar</button>
+            </form>
+            <p class="mensaje-error" id="mensajeError"></p>
+        </div>
+    </section>
+
+    <footer>
+        <p>© Veco's Food & Bar</p>
+    </footer>
+
+    <script src="./Java/main.js"></script>
+</body>
+</html>
